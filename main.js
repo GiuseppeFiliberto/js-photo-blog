@@ -19,7 +19,7 @@ cardEl.insertAdjacentHTML('beforeend', generateMarkup(data))
 })
 
 function generateMarkup(data){
-    return `<div class="col mb-3 d-flex justify-content-center">
+    return `<div class="col  col-lg-4 mb-3 d-flex justify-content-center">
                         <div class="card-frame p-3">
                             <div class="pin">
                                 <img id ='img' src="./assets/img/pin.svg" alt="" style="width: 30px;">
@@ -29,7 +29,7 @@ function generateMarkup(data){
                             </div>
 
                             <div class="card-details">
-                                <div class="date">${data.date}</div>
+                                <div class="date text-secondary">${data.date}</div>
                                 <div class="card-title fs-5 title">${data.title}</div>
                             </div>
                         </div>
