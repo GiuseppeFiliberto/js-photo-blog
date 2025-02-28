@@ -19,19 +19,22 @@ cardEl.insertAdjacentHTML('beforeend', generateMarkup(data))
 })
 
 function generateMarkup(data){
-    return `<div class="col  col-lg-4 mb-3 d-flex justify-content-center">
-                        <div class="card-frame p-3">
-                            <div class="pin">
-                                <img id ='img' src="./assets/img/pin.svg" alt="" style="width: 30px;">
-                            </div>
-                            <div class="card-img mb-3">
-                                <img src="${data.url}" alt="">
-                            </div>
+    return `<div class="col">
+                <div class='mb-3 d-flex justify-content-center'> 
+                            <div class="card-frame p-3">
+                                <div class="pin">
+                                    <img id ='img' src="./assets/img/pin.svg" alt="" style="width: 30px;">
+                                </div>
+                                <div class="card-img mb-3">
+                                    <img src="${data.url}" alt="">
+                                </div>
 
-                            <div class="card-details">
-                                <div class="date text-secondary">${data.date}</div>
-                                <div class="card-title fs-5 title">${data.title}</div>
+                                <div class="card-details">
+                                    <div class="date text-secondary">${data.date}</div>
+                                    <div class="card-title fs-4 title">${data.title.toUpperCase()}</div>
+                                </div>
                             </div>
-                        </div>
-                    </div>`
+                </div>
+             </div>`
+    
 }
