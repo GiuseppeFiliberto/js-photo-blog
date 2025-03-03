@@ -38,8 +38,6 @@ cardEl.addEventListener('click', (event) => {
 });
 
 
-
-
 })
 
 function generateMarkup(data){
@@ -64,4 +62,6 @@ function generateMarkup(data){
 }
 
 
-
+btnEl.addEventListener('click', () => {
+    overlayEl.style.display = 'none';
+});
