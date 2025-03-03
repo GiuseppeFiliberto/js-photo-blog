@@ -41,3 +41,9 @@ function generateMarkup(data){
              </div>`
     
 }
+
+// Aggiungo l'evento che al click espanda l'immagine sulla pagina
+
+cardEl.addEventListener('click', function(){
+    
+})
