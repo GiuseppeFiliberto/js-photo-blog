@@ -1,6 +1,9 @@
 
 const cardEl = document.getElementById('card')
 const overlayEl = document.querySelector('.overlay')
+const overlayImg = document.getElementById('overlay-img')
+const imgOverlayContainer = document.querySelector('img-container')
+const img = document.querySelectorAll('img')
 const btnEl = document.querySelector('.btn')
 
 // const dataUrlEndpoint = 'https://lanciweb.github.io/demo/api/pictures/'; 
@@ -18,6 +21,24 @@ dataList.forEach(data => {
 
 cardEl.insertAdjacentHTML('beforeend', generateMarkup(data))
 })
+
+// Aggiungo l'evento che al click espanda l'immagine sulla pagina
+
+
+cardEl.addEventListener('click', (event) => {
+
+    const clickedImg = event.target.closest('.card-img img');
+
+    if (clickedImg) {
+        overlayImg.src = clickedImg.src;
+        overlayEl.style.display = 'flex';
+    }
+
+
+});
+
+
+
 
 })
 
@@ -42,8 +63,5 @@ function generateMarkup(data){
     
 }
 
-// Aggiungo l'evento che al click espanda l'immagine sulla pagina
 
-cardEl.addEventListener('click', function(){
-    
-})
+
