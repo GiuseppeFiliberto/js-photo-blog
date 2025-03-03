@@ -1,5 +1,8 @@
 
 const cardEl = document.getElementById('card')
+const overlayEl = document.querySelector('.overlay')
+const btnEl = document.querySelector('.btn')
+
 // const dataUrlEndpoint = 'https://lanciweb.github.io/demo/api/pictures/'; 
 
 fetch('https://lanciweb.github.io/demo/api/pictures/')
