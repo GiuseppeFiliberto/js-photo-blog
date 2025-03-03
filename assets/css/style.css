@@ -61,3 +61,15 @@ body{
         width: 600px;
     }
 }
+
+/* card animation on hover */
+
+.card-frame{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-frame:hover{
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
