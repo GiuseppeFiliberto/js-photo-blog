@@ -57,6 +57,7 @@ body{
     top: 0;
     left: 0;
     display: none;
+    z-index: 1000;
     .img-container{
         width: 600px;
     }
@@ -72,4 +73,5 @@ body{
     transform: scale(1.1) rotate(10deg);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    z-index: 99;
 }

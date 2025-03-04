@@ -27,7 +27,7 @@ cardEl.insertAdjacentHTML('beforeend', generateMarkup(data))
 
 cardEl.addEventListener('click', (event) => {
 
-    const clickedImg = event.target.closest('.card-img img');
+    const clickedImg = event.target.closest('.card-frame img');
 
     if (clickedImg) {
         overlayImg.src = clickedImg.src;
