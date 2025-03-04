@@ -33,6 +33,7 @@ body{
     width: 350px;
     background-color: white;
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     .date{
         font-family: "Sometype Mono", monospace;
@@ -65,9 +66,6 @@ body{
 
 /* card animation on hover */
 
-.card-frame{
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 .card-frame:hover{
     transform: scale(1.1) rotate(10deg);
